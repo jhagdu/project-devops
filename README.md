@@ -36,7 +36,6 @@ Automation is the ultimate need for DevOps practice and 'Automate everything' is
 
 # Links
 
-[Click here for Video](https://youtu.be/)
 
 ***Feel free to Contact if any issue!!***
 
