@@ -1,5 +1,5 @@
 - name: Create Deployment for Web Pods
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: production
     definition:

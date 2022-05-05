@@ -1,5 +1,5 @@
 - name: Create a Horizontal Pod Autoscaler
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: production
     definition:

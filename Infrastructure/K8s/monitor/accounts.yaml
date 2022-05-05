@@ -1,5 +1,5 @@
 - name: Create Cluster Role for Monitoring Services
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: monitor
     definition:
@@ -45,7 +45,7 @@
           - '*'
 
 - name: Create Service Account for Monitoring Services
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: monitor
     definition:
@@ -56,7 +56,7 @@
         namespace: monitor
 
 - name: Bind ClusterRole with monitor Service Account
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: monitor
     definition:

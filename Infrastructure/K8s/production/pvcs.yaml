@@ -1,5 +1,5 @@
 - name: Create a Shared PVC
-  kubernetes.core.k8s:
+  community.kubernetes.k8s:
     state: present
     namespace: production
     definition:
