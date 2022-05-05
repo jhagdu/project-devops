@@ -1,6 +1,6 @@
 <img src="https://www.contrastsecurity.com/hs-fs/hubfs/images/DevOps%20Solutions/devops-old-way.gif?width=1322&name=devops-old-way.gif" height=400 width=600 alt="DevOps CI/CD" /> 
 
-# DevOps: E2E Pipeline Automation
+# DevOps: E2E Pipeline Automation 
 
 Automation is the ultimate need for DevOps practice and 'Automate everything' is the key principle of DevOps. Here is the Jenkins Pipeline to provide an End to End Automation i.e. Build, Test, Deploy, Monitor, Analyze and Auto Scale the Web Infrastructure
 
