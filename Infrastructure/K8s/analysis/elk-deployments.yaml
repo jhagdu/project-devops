@@ -1,5 +1,5 @@
 - name: Create Deployment for ElasticSearch and Kibana Pods
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:
@@ -57,7 +57,7 @@
             restartPolicy: Always
 
 - name: Create Deployment for filebeat Pods
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: production
     definition:

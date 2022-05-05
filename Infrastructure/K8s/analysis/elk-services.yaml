@@ -1,5 +1,5 @@
 - name: Create Service for ElasticSearch Pods
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:
@@ -18,7 +18,7 @@
           name: es-net-port
 
 - name: Create Service for Kibana Pods
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:

@@ -1,5 +1,5 @@
 - name: Create Service for Web
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: production
     definition:
@@ -18,7 +18,7 @@
           name: web-port
 
 - name: Create Service for Metrics
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: production
     definition:

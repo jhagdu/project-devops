@@ -1,5 +1,5 @@
 - name: Create a ConfigMap for Filebeat Config
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: production
     definition:
@@ -39,7 +39,7 @@
             host: "http://kib-svc.analysis.svc.cluster.local:5601"
 
 - name: Create a ConfigMap for Kibana Config
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:

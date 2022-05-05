@@ -1,5 +1,5 @@
 - name: Create a Shared PVC
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:
@@ -17,7 +17,7 @@
             storage: 1Gi
 
 - name: Create Deployment for Grafana
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:
@@ -55,7 +55,7 @@
 
 
 - name: Create Service for Grafana
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:

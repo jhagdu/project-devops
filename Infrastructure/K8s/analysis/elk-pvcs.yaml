@@ -1,5 +1,5 @@
 - name: Create a PVC for Kibana
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:
@@ -17,7 +17,7 @@
             storage: 1Gi
 
 - name: Create a PVC for ElasticSearch
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: analysis
     definition:
@@ -35,7 +35,7 @@
             storage: 1Gi
 
 - name: Create a PVC for filebeat
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: production
     definition:

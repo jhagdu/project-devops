@@ -1,5 +1,5 @@
 - name: Create ConfigMap for Metricbeat Daemonset Config
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:
@@ -23,7 +23,7 @@
             host: "http://kib-svc.analysis.svc.cluster.local:5601"
 
 - name: Create Configmap for Meticbeat Daemonset Modules
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:
@@ -60,7 +60,7 @@
                 system.filesystem.mount_point: '^/(sys|cgroup|proc|dev|etc|host|lib|snap)($|/)'
 
 - name: Create Cluster Role for Monitoring Services
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: monitor
     definition:
